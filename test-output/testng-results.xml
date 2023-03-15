@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-08T14:49:23 IST" name="Default suite" finished-at="2023-03-08T14:49:23 IST" duration-ms="176">
+  <suite started-at="2023-03-14T18:09:55 IST" name="Suite" finished-at="2023-03-14T18:14:44 IST" duration-ms="288929">
     <groups>
     </groups>
-    <test started-at="2023-03-08T14:49:23 IST" name="Default test" finished-at="2023-03-08T14:49:23 IST" duration-ms="176">
-      <class name="com.employee.BrowserStackSample">
-        <test-method signature="LanchBrowser()[pri:0, instance:com.employee.BrowserStackSample@359df09a]" started-at="2023-03-08T14:49:23 IST" name="LanchBrowser" finished-at="2023-03-08T14:49:23 IST" duration-ms="54" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
+    <test started-at="2023-03-14T18:09:55 IST" name="Test" finished-at="2023-03-14T18:14:44 IST" duration-ms="288929">
+      <class name="com.employee.CameraAccessTest2">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest2@11eadcba]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:14:44 IST" duration-ms="288728" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[org/openqa/selenium/Rotatable]]>
+              <![CDATA[Could not start Mobile Browser.
+ Reason: 
+An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.calculator2' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'android-sdk/platform-tools/adb -P 5037 -s 88MX01NQR shell am start -W -n com.android.calculator2/com.android.calculator2.Calculator -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 120000ms'. Try to increase the 120000ms adb execution timeout represented by 'adbExecTimeout' capability (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 287.96 seconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/Rotatable
-at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
-at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
-at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
-at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
-at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-at com.employee.BrowserStackSample.LanchBrowser(BrowserStackSample.java:43)
+              <![CDATA[org.openqa.selenium.WebDriverException: Could not start Mobile Browser.
+ Reason: 
+An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.calculator2' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'android-sdk/platform-tools/adb -P 5037 -s 88MX01NQR shell am start -W -n com.android.calculator2/com.android.calculator2.Calculator -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 120000ms'. Try to increase the 120000ms adb execution timeout represented by 'adbExecTimeout' capability (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 287.96 seconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.b(Unknown Source)
+at org.openqa.selenium.remote.HandshakeResponse.a(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.a(Unknown Source)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.a(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(Unknown Source)
+at com.employee.CameraAccessTest2.empId(CameraAccessTest2.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,34 +64,326 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.Rotatable
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-... 65 more
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LanchBrowser -->
-      </class> <!-- com.employee.BrowserStackSample -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest2 -->
+      <class name="com.employee.CameraAccessTest3">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest3@2bef51f2]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:10:45 IST" duration-ms="49919" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18083, chromedriverPorts: [[18133, 18143]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SEVWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SEVWA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: ea127ff6c45d7bf5f38c75ce2ae..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8203, takesScreenshot: true, udid: RFCW11SEVWA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18083, chromedriverPorts: [[18133, 18143]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SEVWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SEVWA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: ea127ff6c45d7bf5f38c75ce2ae..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8203, takesScreenshot: true, udid: RFCW11SEVWA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ea127ff6c45d7bf5f38c75ce2ae5e3a19cf3babf
+*** Element info: {Using=id, value=btn1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18083, chromedriverPorts: [[18133, 18143]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SEVWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SEVWA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: ea127ff6c45d7bf5f38c75ce2ae..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8203, takesScreenshot: true, udid: RFCW11SEVWA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18083, chromedriverPorts: [[18133, 18143]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SEVWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SEVWA, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: ea127ff6c45d7bf5f38c75ce2ae..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8203, takesScreenshot: true, udid: RFCW11SEVWA, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ea127ff6c45d7bf5f38c75ce2ae5e3a19cf3babf
+*** Element info: {Using=id, value=btn1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(Unknown Source)
+at org.openqa.selenium.By$ById.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at com.employee.CameraAccessTest3.empId(CameraAccessTest3.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest3 -->
+      <class name="com.employee.CameraAccessTest4">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest4@650eab8]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:10:43 IST" duration-ms="47965" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11RP1SP, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11RP1SP, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3d86fa59b1b6f86c96f2dfcd462..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8200, takesScreenshot: true, udid: RFCW11RP1SP, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11RP1SP, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11RP1SP, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3d86fa59b1b6f86c96f2dfcd462..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8200, takesScreenshot: true, udid: RFCW11RP1SP, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3d86fa59b1b6f86c96f2dfcd462d37c2b712e4dd
+*** Element info: {Using=id, value=btn1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11RP1SP, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11RP1SP, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3d86fa59b1b6f86c96f2dfcd462..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8200, takesScreenshot: true, udid: RFCW11RP1SP, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11RP1SP, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11RP1SP, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3d86fa59b1b6f86c96f2dfcd462..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8200, takesScreenshot: true, udid: RFCW11RP1SP, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3d86fa59b1b6f86c96f2dfcd462d37c2b712e4dd
+*** Element info: {Using=id, value=btn1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(Unknown Source)
+at org.openqa.selenium.By$ById.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at com.employee.CameraAccessTest4.empId(CameraAccessTest4.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest4 -->
+      <class name="com.employee.CameraAccessTest5">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest5@30f5a68a]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:10:44 IST" duration-ms="48751" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SDTNL, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SDTNL, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 9a94b60f8228fe6e06c6b4f7543..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8205, takesScreenshot: true, udid: RFCW11SDTNL, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SDTNL, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SDTNL, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 9a94b60f8228fe6e06c6b4f7543..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8205, takesScreenshot: true, udid: RFCW11SDTNL, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9a94b60f8228fe6e06c6b4f75436d3a857010e72
+*** Element info: {Using=id, value=btn1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SDTNL, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SDTNL, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 9a94b60f8228fe6e06c6b4f7543..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8205, takesScreenshot: true, udid: RFCW11SDTNL, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18085, chromedriverPorts: [[18155, 18165]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SDTNL, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SDTNL, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 9a94b60f8228fe6e06c6b4f7543..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8205, takesScreenshot: true, udid: RFCW11SDTNL, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9a94b60f8228fe6e06c6b4f75436d3a857010e72
+*** Element info: {Using=id, value=btn1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(Unknown Source)
+at org.openqa.selenium.By$ById.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at com.employee.CameraAccessTest5.empId(CameraAccessTest5.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest5 -->
+      <class name="com.employee.CameraAccessTest6">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest6@1e1d3956]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:13:01 IST" duration-ms="185069" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18086, chromedriverPorts: [[18166, 18176]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW1290T1J, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW1290T1J, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3e6c44eefd514ef9c1aa26aa6c6..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8206, takesScreenshot: true, udid: RZCW1290T1J, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18086, chromedriverPorts: [[18166, 18176]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW1290T1J, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW1290T1J, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3e6c44eefd514ef9c1aa26aa6c6..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8206, takesScreenshot: true, udid: RZCW1290T1J, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3e6c44eefd514ef9c1aa26aa6c697ce0f6b46d32
+*** Element info: {Using=id, value=btn1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18086, chromedriverPorts: [[18166, 18176]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW1290T1J, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW1290T1J, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3e6c44eefd514ef9c1aa26aa6c6..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8206, takesScreenshot: true, udid: RZCW1290T1J, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18086, chromedriverPorts: [[18166, 18176]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RZCW1290T1J, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RZCW1290T1J, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 3e6c44eefd514ef9c1aa26aa6c6..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8206, takesScreenshot: true, udid: RZCW1290T1J, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3e6c44eefd514ef9c1aa26aa6c697ce0f6b46d32
+*** Element info: {Using=id, value=btn1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(Unknown Source)
+at org.openqa.selenium.By$ById.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at com.employee.CameraAccessTest6.empId(CameraAccessTest6.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest6 -->
+      <class name="com.employee.CameraAccessTest">
+        <test-method signature="empId()[pri:0, instance:com.employee.CameraAccessTest@4f2c9ba6]" started-at="2023-03-14T18:09:55 IST" name="empId" finished-at="2023-03-14T18:10:47 IST" duration-ms="51958" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SCRMN, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SCRMN, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 710caf3337f9ac46dca74e6fc3f..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RFCW11SCRMN, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SCRMN, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SCRMN, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 710caf3337f9ac46dca74e6fc3f..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RFCW11SCRMN, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 710caf3337f9ac46dca74e6fc3f16f3e9e1516a3
+*** Element info: {Using=id, value=btn1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DCKAQOC-050', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, autoGrantPermissions: true, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.0, buildName: browserstack-build-1, bundleID: com.android.calculator2, bundleId: com.android.calculator2, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SCRMN, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SCRMN, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: Android, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 710caf3337f9ac46dca74e6fc3f..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RFCW11SCRMN, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18082, chromedriverPorts: [[18122, 18132]], databaseEnabled: false, detected_language: selenium/unknown (java wind..., device: samsung galaxy s23 ultra, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-S918B, deviceName: RFCW11SCRMN, deviceScreenDensity: 450, deviceScreenSize: 1080x2316, deviceUDID: RFCW11SCRMN, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy S23 Ultra-13.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 13.0, os_version: 13.0, pixelRatio: 2.8125, platform: ANDROID, platformName: ANDROID, platformVersion: 13, projectName: First Java Project, realMobile: true, sessionId: 710caf3337f9ac46dca74e6fc3f..., sessionName: first_test, skipServerInstallation: true, statBarHeight: 75, systemPort: 8202, takesScreenshot: true, udid: RFCW11SCRMN, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2031, left: 0, top: 75, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 710caf3337f9ac46dca74e6fc3f16f3e9e1516a3
+*** Element info: {Using=id, value=btn1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.a(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(Unknown Source)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(Unknown Source)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(Unknown Source)
+at org.openqa.selenium.By$ById.findElement(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(Unknown Source)
+at com.employee.CameraAccessTest.empId(CameraAccessTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empId -->
+      </class> <!-- com.employee.CameraAccessTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

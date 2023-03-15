@@ -17,46 +17,66 @@ import com.browserstack.config.Platform;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class CameraAccessTest {
+public class CameraAccessTest4 {
+	
+@Test
+private void empId() throws MalformedURLException, InterruptedException {
 
-	@Test
-	private void empId() throws MalformedURLException, InterruptedException {
 
 		DesiredCapabilities caps = new DesiredCapabilities();
+
+		// Set your access credentials
 		caps.setCapability("browserstack.user", "jagadeesh_Bc7WMr");
 		caps.setCapability("browserstack.key", "RAhWbcP7fxDPHvSqLT7t");
-		
+
+       // Set URL of the application under test
 		caps.setCapability("app", "bs://432b13ea6ff2258ec31ac51cc98a3362df5dad16");
-		
-		 caps.setCapability("device", "Samsung Galaxy S6");
-	        caps.setCapability("os_version", "5.0");
+    	
+
+       // Specify device and os_version for testing
+		   caps.setCapability("device", "Motorola Moto G7 Play");
+	        caps.setCapability("os_version", "9.0");
+
+       // Set other BrowserStack capabilities
 		caps.setCapability("project", "First Java Project");
 		caps.setCapability("build", "browserstack-build-1");
 		caps.setCapability("name", "first_test");
 		caps.setCapability("autoGrantPermissions", true);
 		caps.setCapability("browserstack.local", "false");
 		caps.setCapability("browserstack.interactiveDebugging", "true");
+
+		// Initialise the remote Webdriver using BrowserStack remote URL
+		// and desired capabilities defined above
 		WebDriver driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
 		Thread.sleep(15000);
-
-		Thread.sleep(5000);
-		driver.findElement(By.id("btn1")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.id("btn2")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.id("btn3")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.id("btn4")).click();
-
-		// Get the result and print it
+//		   driver.get("calculator_app_url");
+		   Thread.sleep(5000);
+		      driver.findElement(By.id("btn1")).click();
+		      Thread.sleep(5000);
+		      driver.findElement(By.id("btn2")).click();
+		      Thread.sleep(5000);
+		      driver.findElement(By.id("btn3")).click();
+		      Thread.sleep(5000);
+		      driver.findElement(By.id("btn4")).click();
+		      
+		      // Get the result and print it
 //		      String result = driver.findElement(By.id("result")).getText();
 //		      System.out.println("Result: " + result);
 
 //		boolean contains = driver.getCurrentUrl().contains("xyz");
 //		Assert.assertTrue(contains);
+	
+		
+	
 
 		// Quit the driver
 		driver.quit();
 	}
 
+
 }
+
+
+
+
+
